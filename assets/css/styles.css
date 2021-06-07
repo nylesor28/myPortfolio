@@ -1,93 +1,331 @@
-
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 :root {
-    --background-color: #BAC6D9;
-    --primary-color: #2E7BE0;
-    --secondary-color: #69DB90;
-    --tertiary-color: #1F4F5C;
-    --background-color2: #109BE8;
+  --primary-color: #69db90;
+  --secondary-color: #094594;
+  --tertiary-color: #1f4f5c;
+  --background-color: #8a9ab4;
 }
 
 body {
-    font-family: Helvetica, Arial, sans-serif;
-    background-color: var(--background-color);
-    
+  background-color: var(--background-color);
+  color: var(--tertiary-color);
+  font-family: Helvetica, Arial, sans-serif;
+  border: 10px solid navy;
 }
+
+/* HEADER / NAV BAR STYLES START */
 
 header {
-    
-    background-color: var(--tertiary-color);
-    padding: 20px 35px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    flex-direction: row;
-   
+  padding: 20px 35px;
+  background-color: var(--tertiary-color);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
 }
-
 header a {
-    text-decoration: none;
-    color: var(--secondary-color);
+  text-decoration: none;
+  color: var(--primary-color);
 }
 
 header h1 {
-    font-weight: bold;
-    font-size: 36px;
-    margin: 0;
+  background-color: var(--primary-color);
+  font-weight: bold;
+  font-size: 36px;
+  margin: 0;
+  border-radius: 25%;
+}
+
+header h1 a {
+  color: var(--tertiary-color);
 }
 
 header nav {
-    margin: 7px 0;
+  margin: 7px 0;
+  flex: 3 30%;
 }
 
 header nav ul {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: center;
-      list-style: none; 
-  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
 
 header nav ul li a {
-     text-decoration: none; 
-     padding: 10px 15px;
-     font-weight: lighter;
-     font-size: 1.55vw;
+  padding: 10px 15px;
+  font-weight: lighter;
+  font-size: 1.55vw;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
+
+header nav ul li a:hover {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  border-radius: 15px;
+  text-shadow: none;
+}
+
+/* HEADER / NAVBAR STYLES END */
+
+/* FOOTER STYLES START */
+footer {
+  background: var(--primary-color);
+  padding: 40px 35px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+footer h2 {
+  color: var(--secondary-color);
+  font-size: 30px;
+  margin: 0;
+}
+
+footer div {
+  line-height: 1.5;
+  text-align: right;
+}
+
+footer a {
+  color: var(--secondary-color);
+}
+/* END FOOTER STYLES */
+
+/* HERO STYLES START */
+
+.hero {
+  background-image: url("../images/erol-ahmed-aIYFR0vbADk-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 100px;
+}
+
+.hero h2 {
+  color: #e8670e;
+  text-align: right;
+}
+
+
+/* HERO STYLES ENDS */
+
+.about-me,
+.projects-section,
+.contact-me-section {
+  margin: 50px auto;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.wrapper {
+  border-left: 5px solid var(--tertiary-color);
+  height: 100%;
+  /* position: relative; */
+}
+
+.section-header h2 {
+  margin: 3.5%;
+  line-height: 1.2;
+  font-style: italic;
+  font-size: 24px;
+  text-align: right;
+  color: var(--primary-color);
+  align-self: start;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* ABOUT-ME STYLES STARTS */
+
+.about-me-bio-wrapper {
+  flex: 2 70%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.about-me-bio {
+  color: var(--secondary-color);
+  padding: 2%;
+  border-radius: 15px;
+}
+
+.about-me-bio p {
+  font-size: 18px;
+}
+
+/* ABOUT-ME STYLES ENDS */
+
+/* PROJECTS STYLES STARTS */
+
+.projects-section {
+  /* margin: 50px auto;
+  width: 80%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center; */
+  flex-wrap: nowrap;
+  /* border: 5px solid tomato; */
+}
+.projects-container {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+  /* border: 5px solid orange; */
+}
+
+.project {
+  /* min-width:35%; */
+  /* max-width: 250px;
+  min-width: 100px; */
+
+  min-width: 33%;
+  flex: 1 50%;
+  min-height: 250px;
+  flex: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  /* border: 5px solid green; */
+  margin: 10px;
+}
+
+.projects-container:first-child {
+  min-width: 755px;
+}
+
+.project-run-buddy {
+  background-image: url("../images/run-buddy-bg.jpg");
+  background-size: cover;
+}
+
+.project-horiseon {
+  background-image: url("../images/horiseon-bg.jpg");
+  background-size: cover;
+}
+
+.project-placeholder {
+  background-image: url("../images/jeremy-bishop-1braZySlEKA-unsplash.jpg");
+  background-size: cover;
+}
+
+.project:hover {
+  opacity: 0.75;
+  border: 5px solid var(--primary-color);
+}
+.project-desc {
+  bottom: 15px;
+  align-self: flex-end;
+  margin-left: 1%;
+  margin-bottom: 10%;
+  font-weight: bold;
+  font-size: 1.5vw;
+  background: var(--background-color);
+}
+
+.project-desc span {
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* PROJECTS STYLES ENDS */
+
+/* CONTACT ME STYLES STARTS */
+.contact-me-wrapper {
+  flex: 2 70%;
+}
+
+.contact-me-wrapper ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 2 70%;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.contact-me-wrapper ul li a {
+  text-decoration: none;
+  padding: 10px 15px;
+  font-weight: lighter;
+  font-size: 3vw;
+  align-items: center;
+  color: var(--secondary-color);
+}
+
+.contact-me-wrapper ul li a:hover {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  border-radius: 15px;
+}
+
+/* CONTACT ME STYLES ENDS */
+
 
 
 
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
-    header {
-      padding-bottom: 0;
-      justify-content: center;
-      position: relative;
-    }
-  
-    header h1 {
-      width: 100%;
-      text-align: center;
-    }
-  
-    header nav ul {
-      margin-top: 20px;
-      width: 100%;
-      justify-content: center;
-    }
-  
-    header nav ul li a {
-      font-size: 20px;
-    }
-  
-    footer h2, footer div {
-      text-align: center;
-      width: 100%;
-    }
+  header {
+    padding-bottom: 0;
+    justify-content: center;
+    position: relative;
+  }
+
+  header h1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  header nav ul {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  header nav ul li a {
+    font-size: 20px;
+  }
+
+  footer h2,
+  footer div {
+    text-align: center;
+    width: 100%;
+  }
+
+  .section-header {
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .section-header h2 {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  .contact-me-section,
+  .projects-section {
+    flex-wrap: wrap;
+  }
+  .wrapper {
+    border-left: none;
+  }
 }
