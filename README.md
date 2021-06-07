@@ -1,4 +1,4 @@
-# Protfolio
+# Portfolio
 
 ## Objective
 The purpose of this project is create a portfolio which demonstrates my deployed samples of work. According to UCONN's Bootcamp Second Challenage, my portfolio should meet the following criteria:
@@ -26,8 +26,8 @@ THEN I am presented with a responsive layout that adapts to my viewport
 
 ## Links
 
-* **Refactored Home Page:** <https://nylesor28.github.io/horiseonPage/> 
-* **Github Repo:** <https://github.com/nylesor28/horiseonPage>
+* **Portfolio Site:** <https://nylesor28.github.io/myPortfolio/> 
+* **Github Repo:** <https://github.com/nylesor28/myPortfolio>
 
 
 ## Languages Used
