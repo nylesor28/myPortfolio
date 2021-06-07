@@ -1,4 +1,4 @@
-# Refactor Horiseon Home Page
+# Protfolio
 
 ## Objective
 The purpose of this project is create a portfolio which demonstrates my deployed samples of work. According to UCONN's Bootcamp Second Challenage, my portfolio should meet the following criteria:
