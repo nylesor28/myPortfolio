@@ -211,6 +211,11 @@ footer a {
   min-width: 755px;
 }
 
+.project-stack-underflo {
+  background-image: url("../images/stackunderflow.jpg");
+  background-size: cover;
+}
+
 .project-coin-nerds {
   background-image: url("../images/btc-gb2.jfif");
   background-size: cover;
