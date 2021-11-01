@@ -211,6 +211,11 @@ footer a {
   min-width: 755px;
 }
 
+.project-salon-xperience {
+  background-image: url("../images/SalonXperience.jpg");
+  background-size: cover;
+}
+
 .project-stack-underflo {
   background-image: url("../images/stackunderflow.jpg");
   background-size: cover;
